@@ -1,0 +1,6 @@
+use <database>;
+ALTER DATABASE <database>
+ CHARACTER SET utf8mb4
+ COLLATE utf8mb4_unicode_ci;
+
+sudo mysqlcheck --auto-repair --optimize --all-databases
