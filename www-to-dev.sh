@@ -23,3 +23,11 @@ find .  -type d \( \
         -exec grep -q "$SRC" {} \; \
         -exec sed -i 's,'"$SRC"','"$DST"',' {} \; \
         -printf '"%p"\n'
+
+printf "\n Changing Language to EN \n"
+
+wp site switch-language en_US
+
+printf "\n Discourage search engines from indexing this site \n"
+
+wp option set blog_public 0
