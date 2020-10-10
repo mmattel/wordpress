@@ -1,6 +1,6 @@
 #!/bin/bash
-SRC='www.innovation-und-beratung.com';
-DST='dev.innovation-und-beratung.com';
+SRC='www.yousite.com';
+DST='xxxx.yousite.com';
 
 printf "\n Replace URL in files \n"
 
