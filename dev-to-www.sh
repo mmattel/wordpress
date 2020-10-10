@@ -1,6 +1,6 @@
 #!/bin/bash
-SRC='dev.innovation-und-beratung.com';
-DST='www.innovation-und-beratung.com';
+SRC='xxxx.yousite.com';
+DST='yyyy.yousite.com';
 
 printf "\n Replace URL in files \n"
 
@@ -11,7 +11,6 @@ find .  -type d \( \
          -name "cache" -o \
          -name "et-cache" -o \
          -name "sitemap-cache" -o \
-         -name "uploads" -o \
          -name "languages" -o\
          -name "plugins" -o\
          -name "cache" -o \
