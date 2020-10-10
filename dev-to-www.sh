@@ -1,6 +1,6 @@
 #!/bin/bash
 SRC='xxxx.yousite.com';
-DST='yyyy.yousite.com';
+DST='www.yousite.com';
 
 printf "\n Replace URL in files \n"
 
