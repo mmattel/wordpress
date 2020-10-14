@@ -1,4 +1,7 @@
 #!/bin/bash
+# NOTICE: run this script as webserver user (sudo -uwww-data)
+# this will create missing directories with proper rights
+
 SRC='xxxx.yousite.com';
 DST='www.yousite.com';
 
