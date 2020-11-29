@@ -2,6 +2,12 @@
 # NOTICE: run this script as webserver user (sudo -uwww-data)
 # this will create missing directories with proper rights
 
+# Make sure only www-data can run our script
+if [ "$(id -u -n)" != "www-data" ]; then
+   echo "This script must be run as www-data" 1>&2
+   exit 1
+fi
+
 SRC='xxxx.yousite.com';
 DST='www.yousite.com';
 
