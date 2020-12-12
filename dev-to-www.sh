@@ -43,12 +43,12 @@ printf "\n Encourage search engines from indexing this site \n"
 
 wp option set blog_public 1
 
-printf "\n Replacing $SRC to $DST"
+printf "\n Replacing $SRC to $DST \n"
 # https://developer.wordpress.org/cli/commands/search-replace/
 wp search-replace $SRC $DST --all-tables --report-changed-only # --dry-run
 
-printf "\n Flushing Cache"
+printf "\n Flushing Cache \n"
 wp cache flush
 
-printf "\n Rebuild W3TC Cache"
+printf "\n Rebuild W3TC Cache \n"
 wp w3-total-cache pgcache_prime
